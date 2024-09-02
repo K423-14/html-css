@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 无序列表unorder list -->
+    <!-- ul里面只能包括li，li里面可以包括其他标签 -->
+    <ul>
+        <li>榴莲</li>
+        <li>香蕉</li>
+        <li>苹果</li>
+    </ul>
+    <!-- 有序列表order list -->
+    <!-- li:list item -->
+    <ol>
+        <li>张三：100</li>
+        <li>李四：80</li>
+    </ol>
+    <!-- 自定义列表defined list里面只能包括dt/dl -->
+    <dl>
+        <dt>自定义列表标题defined title</dt>
+        <dd>自定义列表详情defined detail</dd>
+        <dd>自定义列表详情defined detail</dd>
+    </dl>
+
+    <!-- 表格 -->
+    <!-- border边框宽度，宽高一般在css里 -->
+    <!-- 结构标签thead，tbody，tfoot，不可跨结构合并单元格 -->
+    <table border="1" width="600" height="400">
+        <caption><b>学生成绩单</b></caption>
+        <thead>
+            <!-- 行table row -->
+            <tr>
+                <!-- 表头th table headline -->
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <td>小格格</td>
+                <!-- 跨行合并2格 -->
+                <td rowspan="2">100分 </td>
+                <td>真棒！</td>
+            </tr>
+            <tr>
+                <!-- 单元格table data -->
+                <td>小结节</td>
+                <td>真好！</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <!-- 跨列合并2格 -->
+                <td colspan="2">郎才女貌</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- 表单form -->
+    <form action="">
+        <!-- 输入单行文本 -->
+        文本框：<input type="text" placeholder="占位符"><br>
+        <!-- 输入内容以点显示 -->
+        密码框：<input type="password"><br>
+        <!-- 相同name为一组，checked默认选中 -->
+        单选框：<input type="radio" name="1" checked>选项一 <input type="radio" name="1">选项二 <br>
+        <!-- checked默认选中 -->
+        多选框：<input type="checkbox" checked><br>
+        <!-- 上传多个文件multiple -->
+        文件选择：<input type="file" multiple><br>
+        <!-- 按钮 -->
+        <input type="submit" value="提交按钮"><button type="submit">提交按钮</button><br>
+        <input type="reset" value="重置按钮"><button type="reset">重置按钮</button><br>
+        <input type="button" value="按钮上显示的字"><button type="button">普通按钮</button><br>
+        <!-- 下拉菜单 -->
+        <select>
+            <option>选项一</option>
+            <option>选项二</option>
+            <option selected>选项三（默认选中，不指定默认第一个）</option>
+        </select>
+        <!-- 文本域 -->
+        <textarea cols="60" rows="30"></textarea><br>
+        <!-- label标签，点字也可以选，两种使用 -->
+        单选框：<input type="radio" name="1" checked id="man"><label for="man">选项一 </label>
+        <label><input type="radio" name="1" id="woman">选项二 </label><br>
+    </form>
+
+    <!-- 语义化标签 -->
+    <!-- 无语义 -->
+    <div>这是div标签 division分割</div><div>自动换行</div>
+    <span>这是span标签，范围</span><span>不换行</span>
+    <!-- 有语义（移动端） -->
+    <header>网页头部</header>
+    <nav>网页导航</nav>
+    <footer>网页底部</footer>
+    <aside>侧边栏</aside>
+    <section>网页区域</section>
+    <article>文章</article>
+
+    <!-- 字符实体 -->
+    中间有             空格<br>
+    中间有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;空格<br>
+
+
+</body>
+</html>
