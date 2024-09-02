@@ -1,0 +1,19 @@
+/* 2.外联式 */
+p{
+    /* 文字颜色 */
+    color: red;
+    color: rgb(255, 0, 0);
+    /* 最后一个是透明度，0～1 */
+    color: rgba(255, 0, 0, 0.5);
+    /* 六位16进制数，红ff绿00蓝00，一个颜色内部相同可合并 */
+    color: #f00;
+    /* 字体大小，单位像素 */
+    font-size: 30px;
+    /* 背景颜色 */
+    background-color: green;
+    /* 宽高 */
+    width: 100px;
+    height: 500px;
+    /* 居中 */
+    margin: 0 auto;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.标签选择器 */
+        p {
+            color: red;
+        }
+        /* 2.类选择器 */
+        /* 定义类名. */
+        /* 有字母数字_-，但数字-不能做开头 */
+        .green {
+            color: green;
+        }
+        .font-size {
+            font-size: 66px;
+        }
+        /* 3.id选择器 */
+        /* 一个页面只能出现一次 */
+        #gray {
+            color: gray;
+        }
+        /* 4.通配符选择器 */
+        /* 一般用来清除默认的margin与padding属性 */
+        * {
+            color: black;
+        }
+    </style> 
+</head>
+<body>
+    <p>这是一个p标签</p>
+    <p class="green font-size">变绿的66px的p标签</p>
+    <div id="gray">这是一个div标签</div>
+</body>
+</html>
