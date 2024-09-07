@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<style>
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+
+            /* 转成行内块 */
+            display: inline-block;
+        }
+        span {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+        }
+        img {
+            height: 300px;
+            width: 300px;
+
+            /* 转成行内 */
+            display: block;
+        }
+    </style>
+-->
+    <style>
+        div {
+            color: blue;
+            font-size: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 显示模式 -->
+    <!-- 块：独占一行，与父级通宽度，添加宽度生效 -->
+    <div>divdivdiv</div>
+    <!-- 行内元素：一行之内显示，设置宽高不生效，尺寸同内容大小 -->
+    <span>spanspanspan</span>
+    <!-- 行内块： 一行显示多个，宽高生效-->
+    <img src="../f32eb9da746d0469d1f8d407fe21802d.jpeg" alt="">
+
+    <!-- 嵌套问题 -->
+    <!-- p里面不能放div、p、h等块级元素 -->
+    <p>
+        <h1>p里面h1标签</h1>
+    </p>
+    <!-- a里不能放a -->
+
+    <!-- 继承 -->
+    <!-- 控制文字的可以继承，其他的不能 -->
+    <div>
+        div
+        <span>span in div</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器，儿孙 */
+        div p {
+            color: red;
+        }
+        /* 子代选择器 */
+        div>a {
+            color: green;
+        }
+        /* 并集选择器 */
+        h2,h1{
+            color: blue;
+        }
+        /* 交集选择器 */
+        span.box{
+            color: pink;
+        }
+        /* 伪类选择器 */
+        a:hover{
+            color: red;
+            background-color: gray;
+        }
+
+        body {
+            /* 背景图 */
+            background-image: url(../f32eb9da746d0469d1f8d407fe21802d.jpeg);
+            /* 背景图方式， no-repeat不平铺，repeat-x横着铺*/
+            background-repeat: no-repeat;
+            /* 位置，左负右正，上下，可以用像素 */
+            background-position: center center;
+            /* 复合属性 */
+            background: #000 url(../f32eb9da746d0469d1f8d407fe21802d.jpeg) no-repeat center right;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>这是一个p标签
+            <a href="#">这是div里p里的a</a>
+        </p>
+        <a href="#">儿子a</a>
+    </div>
+    <h2>h2</h2>
+    <h1>h1</h1>
+    <span class="box">span+box</span>
+    <span>span</span>
+    <a href="#">a</a>
+</body>
+</html>
