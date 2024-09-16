@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 不能给继承的加important，自己有属性不听父级的 */
+            color: red;
+        }
+        span {
+            color: green!important;
+        }
+        .box {
+            color: blue;
+        }
+        #box {
+            color: orange;
+        }
+
+        /* 权重计算：（行内样式，id选择器，类选择器，标签选择器）一级一级比 */
+        /* 0 1 0 1 */
+        div #one {
+            color: orange;
+        }
+        /* 0 0 2 0 */
+        .father .son{
+            color: skyblue;
+        }
+        /* 0 0 1 1 */
+        .father p {
+            color: purple;
+        }
+        /* 0 0 0 1 */
+        div p {
+            color: pink;
+        }
+
+        /* p.s. 都是继承则看哪个离得最近p89 */
+        /* p.s.2 同等级取最下面的 */
+
+    </style>
+</head>
+<body>
+    <!-- 优先级 继承<通配符选择器<标签选择器<类选择器<id选择器<行内样式<!important -->
+    <span class="box" id="box" style="color: pink;"> 测试文字 </span>
+    <div class="father">
+        <p class="son" id="one">权重计算测试</p>
+    </div>
+</body>
+</html>
